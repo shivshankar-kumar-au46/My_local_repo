@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    left: 480px;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px red;
+    
+}
+.progress{
+    display: inline-block;
+    width: 2px;
+    border-radius: 5px;
+    background-color: red;
+    height: 6px;
+    position: relative;
+    left: 487px;
+    box-shadow: 5px 5px 5px rgb(16, 163, 231);
+    animation: progress-bar 4s linear infinite;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+@keyframes progress-bar {
+    50%{
+        width: 29%;
+        background-color: yellow;
+    }
+    50%{
+        width: -29%;
+        background-color: red;
+    }
+    
+}
+.container{
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, orange, purple);
+
+}
+
+.container div{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;      
+}
+
+.container div:hover{
+    box-shadow: 5px 5px 10px skyblue;
+    transform: scale(1.2);
+    z-index:2;
+}
+
+.Primary{
+    color: white;
+    background-color: #292cd6;
+}
+
+.Secondary{
+    background-color: #4681b9;
+}
+
+.Neutral{
+    background-color: #ebf5f3;
+}
+
+.Accent{
+    color: white;
+    background-color: #219bde;
+}
+
+.Success{
+    color: white;
+    background-color: #15843e;
+}
+
+.Alert{
+    color: white;
+    background-color: #f10e18;
+}
+
+.Warning{
+    color: white;
+    background-color: #ef7110;
+}
+
+.Info{
+    background-color: #3adced;
+}

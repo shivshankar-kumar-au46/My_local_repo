@@ -1,0 +1,80 @@
+//Q-1 ) https://leetcode.com/problems/longest-valid-parentheses/
+
+var longestValidParentheses = function(s) {
+    if (!s || s.length == 0) return 0;
+    
+    let stack = [];
+    const iBadChars = new Set();
+    /**
+    * Match from left to right the parenthesis with the first it encounters. 
+    * Only bad parenthesis indexes remain in the stack
+    **/
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === '(') {
+            stack.push(i);
+        } else {
+            if (stack.length) {
+                stack.pop();
+            } else {
+                iBadChars.add(i);
+            }
+        }       
+    }
+    
+    /**
+    * Add bad stack indexes to set
+    **/
+    while (stack.length) {
+        iBadChars.add(stack.pop());
+    }
+
+    /**
+    * Print length of correct substrings
+    **/
+    let max = 0, currMax = 0;
+    for (let i = 0; i < s.length; i++) {
+        if (iBadChars.has(i)) {
+            if (currMax > max) {
+                max = currMax;
+            }
+            currMax = 0;
+        } else {
+            currMax++;
+        }
+        
+        if (i === s.length - 1 && currMax > max) {
+            max = currMax;
+        }
+    }
+
+    return max;
+};
+
+//Q - 2 ) https://leetcode.com/problems/trapping-rain-water/
+
+var trap = function(height) {
+    let result = 0;
+    let left = 0;
+    let right = height.length - 1;
+    let leftMax = 0;
+    let rightMax = 0;
+    while (left < right) {
+        if (height[left] < height[right]) {
+            if (height[left] >= leftMax) {
+                leftMax = height[left];
+            } else {
+                result += leftMax - height[left];
+            }
+            left++;
+        } else {
+            if (height[right] >= rightMax) {
+                rightMax = height[right];
+            } else {
+                result += rightMax - height[right];
+            }
+            right--;
+        }
+    }
+    return result;
+    
+};

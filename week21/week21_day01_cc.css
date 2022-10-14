@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.chessboard  {
+    width: min(100vh,  100vw);
+    height: min(100vh,  100vw);
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: repeat(8,  1fr);
+    padding: 10px;
+}
+
+.square1:nth-child(odd)  {
+    background-color: white;
+}
+
+.square1:nth-child(even)  {
+    background-color: black;
+}
+
+.square2:nth-child(odd)  {
+    background-color: black;
+}
+
+.square2:nth-child(even)  {
+    background-color: white;
+}
+
+/* .container{
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.first:nth-child(odd){
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    
+}
+.first:nth-child(even){
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    
+}
+.second{
+    background-color: black;
+
+    height: 50px;
+    width: 50px;
+
+}
+.third{
+    height: 50px;
+    width: 50px;
+
+}
+.fourth{height: 50px;
+    width: 50px;
+
+}
+.fifth{height: 50px;
+    width: 50px;
+
+}
+.sixth{height: 50px;
+    width: 50px;
+
+}
+.seventh{height: 50px;
+    width: 50px;
+
+}
+.eighth{height: 50px;
+    width: 50px;
+
+} */

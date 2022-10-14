@@ -1,0 +1,99 @@
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./logo/body.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-div{
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.navbar a:hover{
+    background-color: #333;
+    color: white;
+}
+.navbar a{
+    float: left;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #2e3131;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 17px;
+    float: left; 
+}
+.navbar{
+    overflow: hidden;
+    background-color: #e8eeef;
+    /* margin: 20px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+img{
+    height: 40px;
+    width: 40px;
+}
+#logo{
+    margin-top: -5px;
+    overflow: hidden;
+    height: 23px;
+    float: left;
+    background-color: #04AA6D;
+}
+.itmes div{
+    background-color: goldenrod;
+    height: 100px;
+    width: 100px;
+    color: rgb(235, 241, 236);
+    border: 2px solid red;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px lightblue;
+}
+footer{
+    text-align: center;
+    padding: 3px;
+    color: white;
+    background-color: rgb(202, 199, 199);
+}
+.para{
+    float: right;
+    width: 70%;
+    /* height: 1000px; */
+    height: 100vh;
+    margin-right: 100px;
+    margin-top: 100px;
+    border: 1px solid black;
+    background-image: url(./logo/inner-body.jpeg);
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 20%;
+}
+legend{
+    font-size: 60px;
+    /* position: fixed;
+    top: 100px; */
+}
+.para2{
+    margin: 30px 0;letter-spacing: 1px;font-family: 'Times New Roman', Times, serif;line-height: 1.71em;
+}
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+    }
+.para3{
+        float: right;
+    width: 70%;
+    /* height: 1000px; */
+    height: 100vh;
+    margin-right: 100px;
+    margin-top: 100px;
+    border: 1px solid black;
+    background-image: url(./logo/inner-body.jpeg);
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 20%;
+    }

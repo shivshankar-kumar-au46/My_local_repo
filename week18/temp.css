@@ -1,0 +1,21 @@
+.outer-div{
+    border: 3px solid skyblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+.button {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    justify-content: center;
+    font-size: medium;
+    margin: 4px 2px;
+    border: none;
+    background-color: rgb(223, 231, 225);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}

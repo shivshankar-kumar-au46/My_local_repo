@@ -1,0 +1,48 @@
+//Q-1 )https://leetcode.com/problems/merge-sorted-array/
+
+
+let nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+
+var merge = function(nums1, m, nums2, n) {
+    if (m==0 && n ==0) {
+        return;
+    }
+        if (n==0){
+            return;
+        }
+        if (m==0) {
+            nums1[m+n-1] = nums2[n-1];
+            merge(nums1,m,nums2,n-1);
+            return;
+        }
+        if (nums1[m-1]>nums2[n-1]){
+            nums1[m+n-1] = nums1[m-1];
+            merge(nums1,m-1,nums2,n);
+        }
+        else {
+            nums1[m+n-1] = nums2[n-1];
+            merge (nums1,m,nums2,n-1);
+        }
+        return  nums1;
+    };
+
+    console.log(merge(nums1, m, nums2, n))
+
+    //Q - 2 ) https://leetcode.com/problems/sort-colors/submissions/
+
+    let nums = [2,0,2,1,1,0]
+    //Output: [0,0,1,1,2,2]
+
+    var sortColors = function(nums) {
+        for (let i = 0; i< nums.length; i++) {
+            for (let j = i+1; j<nums.length; j++) {
+                if (nums[i]>nums[j]){
+                    [nums[i], nums[j]] = [nums[j], nums[i]]
+                }
+            }
+        }
+        return nums;
+        
+    };
+
+    console.log(sortColors(nums))

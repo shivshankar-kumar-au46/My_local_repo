@@ -1,0 +1,41 @@
+//Q-1 ) https://leetcode.com/problems/number-of-good-pairs/
+
+var numIdenticalPairs = function(nums) {
+    let count = 0;
+    for (let i = 0; i<nums.length; i++) {
+        for (let j = i + 1; j<nums.length; j++){
+            if (nums[i] === nums[j]) {
+                count++;
+            }
+        }
+    }
+    return count;
+};
+
+// Q - 2 )https://leetcode.com/problems/longest-substring-without-repeating-charact
+//ers/
+
+var lengthOfLongestSubstring = function(s) {
+    let max = 0;
+        let start = 0;
+        const hashTable = {};
+        
+        for (let i =0; i<s.length; i++) {
+        let rightChar = s[i];
+            hashTable[rightChar] = hashTable[rightChar] + 1 || 1;
+        
+        while(hashTable[rightChar] > 1) {
+            let leftChar = s[start];
+            
+            if (hashTable[rightChar] > 1) {
+                hashTable[leftChar]--;
+            } else {
+                delete hashTable[leftChar];
+            }
+            start++;
+        }
+        
+        max = Math.max(max, (i - start) +1)
+    }
+    return max;
+    };

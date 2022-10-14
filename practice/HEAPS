@@ -1,0 +1,30 @@
+let maxHeap = [20, 24, 15, 22, 23, 17, 18];
+
+// convert this invalid max heap into a valid one
+
+function heapify(arr, i) {
+  let l = 2 * i + 1;
+  let r = 2 * i + 2;
+  let largestIndex = i;
+  // compare left side and right side
+  let tempIndex = arr[l] > arr[r] ? l : r;
+
+  // check between largestIndex and tempIndex
+  if (arr[largestIndex] < arr[tempIndex]) {
+    // swapping without extra variable
+    // a= 5, b = 6
+    // a = a+b -> 11
+    // b = a-b -> 11 - 6 = 5
+    // a = a-b -> 11- 5 =6
+
+    arr[largestIndex] = arr[tempIndex] + arr[largestIndex];
+    arr[tempIndex] = arr[largestIndex] - arr[tempIndex];
+    arr[largestIndex] = arr[largestIndex] - arr[tempIndex];
+  }
+
+  // call heapify recursivelly
+}
+
+heapify(maxHeap, 2);
+
+console.log(maxHeap);

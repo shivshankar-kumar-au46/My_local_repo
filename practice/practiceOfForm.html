@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+  <form action="/action_page.php">
+    <fieldset>
+        <legend>Personalia</legend>
+        <label for="fname">First Name :</label><br>  
+        <input type="text" id = "fname" name = "fname" placeholder="enter your first name"><br>
+        <label for="mname">Middle Name :</label><br>
+        <input type="text" id="mname" name="mname" placeholder="enter your middle name"><br>
+        <label for="lname">Last Name :</label><br>
+        <input type="text" id="lname" name="lname" placeholder="enter your last name"><br><br>
+        <label for="add">Address</label>
+        <input type="text" id="add" name="Address" placeholder="enter address">
+        <label for="email">e-mail</label>
+        <input type="email" id="email" name="e-mail" placeholder="enter your email"><br><br>
+        <label for="contact">Mobile :</label>
+        <input type="number" id="contact" name="Mobile" placeholder="enter your mobile">
+        <label for="d.o.b">Date of Birth:</label>
+        <input type="date" id="d.o.b" name="Date of Birth"><br><br>
+        <fieldset>
+            <p>Please upload your recent Photo</p>
+            <label for="myfile">Please select your file</label>
+            <input type="file" id="myfile" name="file"><br><br>
+            <label for="favcolor">Select your favorite color</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        </fieldset><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+    <h1>Display Radio Button</h1>
+    <p>Please select your favorite Web language:</p>
+
+        <fieldset>
+            <input type="radio" id="html" name="f_lang" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="java" name="f_lang" value="JAVA">
+            <label for="java">JAVA</label><br>
+            <input type="radio" id="js" name="f_lang" value="JavaScript">
+            <label for="js">JavaScript</label>
+
+        </fieldset>
+
+        <p>Please select your favorite Games:</p>
+        <fieldset>
+            <input type="radio" id="cricket" name="f_game" value="Cricket">
+            <label for="cricket">Cricket</label><br>
+            <input type="radio" id="football" name="f_game" value="Football">
+            <label for="football">Football</label><br>
+            <input type="radio" id="badminton" name="f_game" value="Badminton">
+            <label for="cricket">Badminton</label>
+        </fieldset>
+
+    <p>Please select your skills</p>
+    <fieldset>
+        <input type="checkbox" id="computer" name="skill_you_know" value="Basic Computer">
+        <label for="computer">Basic Computer</label>
+        <input type="checkbox" id="eng" name="skill_you_know" value="Fluent in English">
+        <label for="eng">Fluent in English</label>
+        <input type="checkbox" id="Eng_typing" name="skill_you_know" value="English Typing">
+        <label for="Eng_typing">English Typing</label>
+        <input type="checkbox" id="tally" name="skill_you_know" value="Tally">
+        <label for="computer">Tally</label>
+    </fieldset>
+
+
+
+    
+  </form>
+</body>
+</html>

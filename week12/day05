@@ -1,0 +1,49 @@
+
+//Q-1 ) https://leetcode.com/problems/baseball-game/
+
+var calPoints = function(ops) {
+    const stack = [];
+  let sum = 0;
+  for (let i = 0; i < ops.length; i++) {
+     if (ops[i] === '+') {
+          const a = stack[stack.length - 1];
+          const b = stack[stack.length - 2];
+          stack.push(a + b);
+          sum += (a + b);
+      } else if (ops[i] === 'D') {
+          const a = stack[stack.length - 1];
+          const r = a * 2;
+          stack.push(r);
+          sum += r;
+      } else if (ops[i] === 'C') {
+          const x = stack.pop();
+          sum -= x;
+      } else {
+          const x = parseInt(ops[i]);
+          stack.push(x);
+          sum += x;
+      }
+  }
+  return sum;
+  
+};
+
+
+//Q - 2 ) https://leetcode.com/problems/next-greater-element-i/
+
+var nextGreaterElement = function(nums1, nums2) {
+    let array= []                                                                          
+    for(let i = 0; i < nums1.length ; i++){                                   
+        let val = nums1[i];
+        let j = nums2.indexOf(nums1[i]);                               
+        while(nums2[j]<= val && j< nums2.length){
+            j++                                                                               
+        }
+        if(nums2[j] > val){
+            array.push(nums2[j])                                                              
+        }else{
+            array.push(-1)                                                                     
+        }
+    }
+    return array;                                                                                  
+};

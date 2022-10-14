@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 66px;
+            width: 100vw;
+            background-color: black;
+        }
+        main{
+            height: 500px;
+            background-color: blue;
+        }
+        .slider{
+            /* width: 100vw; */
+            height: 297px;
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            /* display: inline-block; */
+            /* margin: auto; */
+        }
+        @keyframes slide1 {
+            0%{
+            transform:translate(65vw);
+            }
+            100%{
+            transform:translate(144vw);  
+            }
+        }
+        @keyframes slide2 {
+            0%{
+            transform:translate(-71vw);
+            }
+            100%{
+            transform:translate(7vw);  
+            }
+        }
+        @keyframes slide3 {
+            0%{
+            transform:translate(-145vw);
+            }
+            100%{
+            transform:translate(-57vw);  
+            }
+        }
+            
+        img{
+            display: block;
+            margin: auto;
+        }
+        
+        .img1{
+            transform:translate(65vw);
+            animation: slide1 1s 1s  1 forwards;
+        }
+        .img2{
+            transform:translate(-71vw);
+            animation: slide2 2s 2s 1 forwards;
+        }
+        .img3{
+            transform:translate(-145vw);
+            animation: slide3 3s 4s 1 forwards;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="slider">
+<img class="img1" src="./chapter 2/1.jpg"  alt="">
+<img class="img2" src="./chapter 2/2.jpg"  alt="">
+<img class="img3" src="./chapter 2/3.png"  alt="">
+
+
+
+        </div>
+
+    </main>
+</body>
+</html>

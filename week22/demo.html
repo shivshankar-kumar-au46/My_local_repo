@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="element">Enter any number :</label>
+    <input id="element" type="text">
+    <hr>
+    <button id="pushbtn">push</button>
+    <button id="popbtn">pop</button>
+    <h3 id="result"></h3>
+
+    <script>
+        const pushbtn = document.getElementById("pushbtn");
+        const element = document.getElementById("element");
+
+        pushbtn.addEventListener("click",show);
+        let res = "";
+        function show (){
+            let a = element.value;
+        }
+        let newNode = document.createElement("h2");
+        newNode.append(a)
+        const heading = document.getElementById('result');
+        heading.append(element.value)
+
+        // a.append(result);
+        element.addEventListener("click",show2);
+        function show2 (){
+            // document.getElementById("element").innerHTML = "hello darling";
+        }
+        
+
+    </script>
+</body>
+</html>
+<!-- if(element.length <= 0){
+    document.getElementById('result').innerHTML = "enter number";
+
+} else if (element === String){
+    document.getElementById('result').innerHTML = "enter valid number";
+
+
+} else {
+    arr.push(element.vlaue);
+}
+document.getElementById('result').innerHTML = arr; -->

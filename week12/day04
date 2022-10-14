@@ -1,0 +1,42 @@
+//Q-1 ) https://leetcode.com/problems/find-the-duplicate-number/
+
+var findDuplicate = function(nums) {
+    let duplicate = {};
+   let sum = 0;
+   for (let i = 0; i<nums.length; i++){
+       if (nums[i] in duplicate){
+           duplicate[nums[i]] = ++duplicate[nums[i]];
+       } else {
+           duplicate[nums[i]] = 1;
+       }
+
+   }
+   for (let key in duplicate){
+       if (duplicate[key] > 1){
+          return  key;
+       }
+   }
+};
+
+
+//Q - 2 ) https://leetcode.com/problems/sum-of-unique-elements/
+
+var sumOfUnique = function(nums) {
+    let unique = {};
+       let sum = 0;
+       for (let i = 0; i<nums.length; i++){
+           if (nums[i] in unique){
+               unique[nums[i]] = ++unique[nums[i]];
+           } else {
+               unique[nums[i]] = 1;
+           }
+           
+       }
+       for (let key in unique){
+           if (unique[key] === 1){
+               sum += +key;
+           }
+       }
+       return sum;
+       
+   };

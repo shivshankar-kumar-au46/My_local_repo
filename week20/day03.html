@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="week20_day03_cc.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>My Profile</title>
+</head>
+<body>
+    <div class="main-container">
+<div class="profile">
+    <img class="dp" src="./image_day03/image_dp.webp" height="200px" width="200px" alt="">
+    <div class="user-name"><h1>Karina Khan<span>_</span></h1>
+    <button> Edit Profile</button><i style="font-size:24px;margin: 15px -19px;" class="fa">&#xf013;</i></div>
+    <div class="follower">
+        <p>
+            <b>164</b> posts
+        </p>
+        <p>
+            <b>188</b> followers
+        </p>
+        <p>
+            <b>206</b> following
+        </p>
+    </div>
+    <div class="discription"><p>Karina Khan Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, delectus. <i class="material-icons">camera</i><i class="material-icons">favorite</i><i class="material-icons">attachment</i><i class="material-icons">computer</i></p>
+</div>
+<div class="album">
+    <img  class="album-img" src="./image_day03/img-9.gif" height="300px" width="300px" alt="">
+    <img class="album-img" src="./image_day03/img-3.jpg" height="300px" width="300px" alt="">
+    <img class="album-img" src="./image_day03/img-7.gif" height="300px" width="300px" alt="">
+    <img class="album-img" src="./image_day03/img-4.jpg" height="300px" width="300px" alt="">
+    <img class="album-img" src="./image_day03/img-8.gif" height="300px" width="300px" alt="">
+    <img class="album-img" src="./image_day03/img-1.jpg" height="300px" width="300px" alt="">
+    <video class="album-img" width="300" controls >
+        <source src="./image_day03/video-1.mp4" type="video/mp4">
+    </video>
+    <img class="album-img" src="./image_day03/img-5.jpg" height="300px" width="300px" alt="">
+    <img id="myImage"class="album-img" src="./image_day03/img-6.jpg" height="300px" width="300px" alt="">
+    <button id="btn">Click here</button>
+
+</div>
+    </div>
+</body>
+<script>
+    myImage.style.height = "100px";
+    btn.addEventListener("click", ()=>{
+        if(myImage.style.height === "300px"){
+            myImage.style.height = "100px";
+        }else if (myImage.style.height === "100px"){
+            myImage.style.height = "300px";
+        }
+        
+    })
+</script>
+</html>

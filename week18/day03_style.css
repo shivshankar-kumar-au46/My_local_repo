@@ -1,0 +1,46 @@
+.b1{
+    background-color: rgb(35, 172, 226);
+    border-radius: 7%;
+    margin-right: 12px;
+    width: 100px;
+    border: none;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.b1:hover{
+    background-color:goldenrod;
+}
+
+.b2{
+    background-color: rgb(116, 119, 121);
+    border-radius: 7%;
+    margin-right: 7px;
+    width: 100px;
+    border: none;
+    font-weight: 900;
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.b2:hover{
+    background-color:greenyellow;
+}
+.template{
+    color: brown;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.outer{
+    padding: 15px;    
+    margin-left: 300px;
+    margin-right: 300px;
+    border-left: 5px solid blue;
+}

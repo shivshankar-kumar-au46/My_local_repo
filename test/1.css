@@ -1,0 +1,15 @@
+body{
+    font-family: monospace;
+
+}
+.cal{
+    text-align: center;
+}
+.cal{
+    margin: auto;
+    border-radius: 40px;
+    background-color: rgba(225, 214, 13, 0.466);
+    border: 5px solid orange;
+    width: 400px;  
+    padding: 30px; 
+}

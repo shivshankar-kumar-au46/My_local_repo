@@ -1,0 +1,43 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #pushbtn{
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: rgb(52, 214, 52);
+    color: rgb(84, 230, 84);
+    padding: 10px 17px; 
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+  }
+  #popbtn{
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: rgb(236, 88, 29);
+    color: rgb(236, 34, 34);
+    padding: 10px 17px; 
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  input{
+    width: 400px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  input::placeholder{
+    padding: 5px;
+    font-size: 20px;
+  }
+  .tagline{
+    color: rgb(180, 175, 175);
+    font-size: 25px;
+  }
+  .heading{
+    font-size: 50px;
+  }

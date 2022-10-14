@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .grandParents{
+    background-color: rgb(125, 226, 30);
+    border: 5px solid rgb(35, 21, 240);
+    height: 1000px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+   }
+   .parents1{
+    background-color: rgb(33, 63, 233);
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 500px;
+    
+    
+    
+    
+}
+.parents2{
+    background-color: rgb(26, 218, 128);
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 500px;
+
+    
+    
+}
+</style>
+
+<body>
+
+    <ul id="first">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+ 
+<!-- <div id="first"> -->
+    <!-- <p>This is a p tag</p> -->
+    <!-- I have to insert a h1 tag here as child of div  -->
+<!-- </div> -->
+
+    
+<script>
+// const elm = document.getElementById("first");
+
+// const newList = document.createElement("li");
+
+// newList.textContent = "list 5";
+
+// elm.append(newList);
+
+// How to add new list before list 4;
+
+const elm = document.getElementById("first");
+
+const newList = document.createElement("li");
+
+newList.textContent = "I am new list";
+
+let pos = elm.lastElementChild;
+
+elm.insertBefore(newList,pos);
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+// const elm = document.getElementById("first");
+// elm.innerHTML = "<u>hello</u>"
+
+// const elm = document.getElementsByClassName("cl pi");
+// for (let i = 0 ; i<elm.length; i++){
+//     elm[i].innerHTML = "<h1>hello shiv babu</h1>"
+// }
+
+// const elm = document.getElementsByTagName("h3");
+// for (let i = 0 ; i<elm.length; i++){
+//     elm[i].innerHTML = "hello shiv babu";
+// }
+// const elm = document.getElementById("div1");
+// const elm2 = elm.getElementsByTagName("p");
+// console.log(elm2)
+// for (let i = 0 ; i<elm2.length; i++){
+//     elm2[i].innerHTML = "hello rahul";
+// }
+
+// How to select firstChild,lastChild
+// const elm = document.getElementById("first");
+// const child = elm.firstElementChild;
+// const lastChild = elm.children;
+// for (let i = 0; i<lastChild.length; i++){
+//     lastChild[i].innerHTML = "hello"
+// }
+// console.log(lastChild)
+
+// How to select child to parents
+// const elm = document.getElementById("first");
+// const parents = elm.parentElement;
+// console.log(parents)
+
+
+// How to select next sibling and previous sibling
+
+// const elm = document.getElementById("first");
+// const nextSibling = elm.nextElementSibling;
+// const previousSibling = elm.previousElementSibling;
+
+// console.log(previousSibling)
+
+// How to fetch and change html content
+
+// const elm = document.getElementById("first");
+// // fetch element 
+// const newElm = elm.innerHTML;
+
+// // change the conternt or element
+
+// const newElm = elm.innerHTML = "<h3>this is a head tag</h3>"
+// console.log(newElm)
+
+// How to append element 
+// steps: 1)first acces the node/Element where you have to append new node;
+        // const elm = document.getElementById("first");
+
+        // // 2) create new node/element which you have to append/add inside the target element using createElement() method;
+
+        // const headTag = document.createElement("h1");
+
+        // // 4) now add some content inside h1 tag by using createTaxtNode() method;
+
+        // let newText = document.createTextNode("hello I am new heading tag")
+
+        // // 5) now append above text into head tag which is made by js
+
+        // headTag.append(newText);
+       
+        // // 3) add this above node into dom html using append() method
+
+        // elm.append(headTag);
+ 
+// How to add class name and Id in h1 tag
+
+// const elm = document.getElementById("first");
+
+// // 2) create new node/element which you have to append/add inside the target element using createElement() method;
+
+// const headTag = document.createElement("h1");
+
+// // Adding class and id in h1 tag
+// headTag.className = "intro"
+// headTag.id = "heading"
+
+// // 4) now add some content inside h1 tag by using createTaxtNode() method;
+
+// let newText = document.createTextNode("hello I am new heading tag")
+
+// // 5) now append above text into head tag which is made by js
+
+// headTag.append(newText);
+
+// // 3) add this above node into dom html using append() method
+
+// elm.append(headTag);
+
+// // How to add h1 tag in outside of tag i.e. in body
+
+
+// const elm = document.getElementById("first");
+
+// // 2) create new node/element which you have to append/add inside the target element using createElement() method;
+
+// const headTag = document.createElement("h1");
+
+// document.body.append(headTag);
+
+
+// // Adding class and id in h1 tag
+// headTag.className = "intro"
+// headTag.id = "heading"
+
+// // 4) now add some content inside h1 tag by using createTaxtNode() method;
+
+// let newText = document.createTextNode("hello I am new heading tag")
+
+// other method to insert some content inside h1 tag using properties
+
+// headTag.textContent = " hello I am updated tag line"
+
+// // 5) now append above text into head tag which is made by js
+
+
+
+// headTag.append(newText);
+
+
+// // 3) add this above node into body using append() method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+/** Q-1 ) Write steps in heapify/percolate down method, and write time complexity
+ * and space complexity analysis.
+ */
+
+// Answer):-
+
+/**
+ * Steps which is following in heapify method.
+ * 1):-  Heapify is used in both type of heap (max heap and min heap).
+ * 2):-  In min heap it is rearrange the tree for ex. in min heap root is smaller then it's left
+ *       and right child.
+ * 3):-  In max heap it is same as min heap but a different is that in max heap the root node is
+ *       greater then the left and right child of this tree.
+ * 4):-  It used the index of tree like as array.
+ * 5):-  In this we find the left child using formula 2*i+1 and right child 2*i+2.If we use index
+ *       starting at 0.If we start index at 1 then we use formula 2*i for left chid and for right child 2*i+1.
+ * 6):-  It is start comapre the child from right to left and then the root of these child.
+ * 7):-  If we use heapify for max heap then it comapre the right child to the left child and then root and
+ *       which is greater it is swap them. First it compare it's right child to left child if left is
+ *       greater then it's right then it swep the root to left child. But if the right child is greater
+ *       then left then it swap the right child to root.
+ */
+
+// first we declare a array in a variable.
+let maxHeaps = [20, 24, 15, 22, 23, 17, 18];
+
+// first we make a function.
+
+function heapify(arr, index) {
+  // then we assign left child
+
+  let left = 2 * index + 1;
+
+  // then we assign right child
+
+  let right = 2 * index + 2;
+
+  // we assign a targetindex in a variable
+
+  let targetIndex = index;
+
+  // we capare then the left child to right chile and assign it in a temperory variable
+
+  let tempIndex = arr[left] > arr[right] ? left : right;
+
+  // we put a condition between left child and right child
+
+  if (arr[targetIndex] < arr[tempIndex]) {
+    /** we can swap the values two typ,es. */
+    //first is this:-
+
+    /* arr[targetIndex] = arr[targetIndex] + arr[tempIndex];
+          arr[tempIndex] = arr[targetIndex] - arr[tempIndex];
+          arr[targetIndex] = arr[targetIndex] - arr[tempIndex];*/
+
+    // second is this:-
+
+    [arr[targetIndex], arr[tempIndex]] = [arr[tempIndex], arr[targetIndex]];
+  }
+}
+
+// calling a function
+
+heapify(maxHeaps, 2);
+
+// we print the after heapify it.
+
+console.log(maxHeap);
+
+// After the function complete our array is look like as:- [20, 24, 18, 22, 23, 17, 15]
+
+
+let maxify = []

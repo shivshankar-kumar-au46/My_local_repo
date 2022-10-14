@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    background-color: purple;
+    position: relative;
+    margin: auto;
+    width: 380px;
+    height: 622px;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mobile-wraper{  
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 1s;      
+}
+.mobile-wraper{
+    width: 321px;
+    height: 580px;
+    background-color: #292cd6;
+    background-image: url(./img/lock_pattern.jpg);
+    background-size: 360px 580px;
+    background-repeat: no-repeat;
+}
+
+input{
+    margin: 41px 27px;
+    padding: 20px;
+    position: relative;
+    top: 136px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 2em auto;
+    gap: 0.5em;
+    left: -218px;
+}
+.nav1{
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+    display: flex;
+    position: relative;
+    top: -219px;
+    left: 340px;
+    flex-wrap: wrap;
+}
+.day{
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    left: -58px;
+    margin: 6px 0;
+}
+.date{
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    left: -85px;
+}
+.time{
+    font-size: 35px;
+    text-align: center;
+    left: -73px;
+}
+p{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 203px;
+    right: 58px;
+}
+.draw{
+    left: 20px;
+    color: white;
+}
+

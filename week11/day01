@@ -1,0 +1,45 @@
+//Q-1 )https://leetcode.com/problems/find-peak-element/
+
+
+let nums = [1,2,3,1]
+
+var findPeakElement = function(nums) {
+    if (nums.length === 1) return 0;
+       if (nums[0] > nums[1]) return 0;
+       if ( nums[nums.length-1] > nums[nums.length-2]) return nums.length-1;
+       
+       for (let i =0 ; i<nums.length-2; i++) {
+           let left = nums[i];
+           let mid = nums[i+1];
+           let right = nums[i+2];
+           if (mid>left && mid>right) return i + 1;
+       }
+   };
+
+   console.log(findPeakElement(nums))
+
+//    Q - 2 ) Check if a number is Palindrome:
+// Given an integer, write a function that returns true if the given number is
+// palindrome, else false.
+// For example,
+// Sample input:
+// 12321
+// Sample output:
+// palindrome
+
+function palin (num, temp) {
+    if (num === 0) {
+        return temp;
+    } 
+    temp = (temp*10) + (num%10);
+        return palin (Math.floor(num/10),temp)
+        
+}
+let num = 12321;
+let temp = 0;
+let temp2 = palin(num, temp)
+if ( num === temp2) {
+           console.log('Palindrome')
+        } else {
+            console.log('NOt Palindrome')
+        }

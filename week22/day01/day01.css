@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    margin: auto;
+    width: fit-content;
+    padding: 15px;
+    background-color: skyblue;
+    border-radius: 10px;
+  }
+  h3 {
+    color: green;
+    font-size: 30px;
+  }
+  #firstNum {
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 5px;
+    
+  }
+  #secondNum {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+  }
+  #firstNum:hover,#secondNum:hover{
+    outline: inset dodgerblue;
+
+  }
+  button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(10, 71, 95);
+    color: white;
+  }
+  li {
+    font-size: 25px;
+    margin-right: 10px;
+    list-style-type: none;
+  }

@@ -1,0 +1,24 @@
+//Q-1 ) https://leetcode.com/problems/move-zeroes/
+var moveZeroes = function(nums) {
+  let left = 0;
+    for (let i = 0; i<nums.length; i++){
+        if (nums[i] != 0) {
+            [nums[left],nums[i]] = [nums[i],nums[left]];
+            left++;
+        }
+    }
+    return nums
+};
+
+//Q - 2 ) https://leetcode.com/problems/two-sum/
+
+var twoSum = function(nums, target) {
+    let outPut = [];
+for (let i = 0; i<nums.length; i++) {
+    for (let j = i + 1; j<nums.length; j++) {
+        if (nums[i] + nums[j] === target) {
+            return ([i, j])
+    }
+    }
+}
+};

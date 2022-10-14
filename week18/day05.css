@@ -1,0 +1,74 @@
+
+.outer-div{
+    border: 3px solid skyblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+.button {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    justify-content: center;
+    font-size: medium;
+    margin: 4px 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-default{
+    background-color: rgb(223, 231, 225);
+    transition-duration: 0.4s;
+}
+.btn-default:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.btn-primary{
+    background-color:dodgerblue;
+    color: white;
+    transition-duration: 0.4s;
+}
+.btn-primary:hover {
+    background-color: #4CAF50;
+    color: rgb(12, 12, 12);
+  }
+.btn-success{
+    color: white;
+    background-color: rgb(29, 223, 29);
+    transition-duration: 0.4s;
+}
+.btn-success:hover {
+    background-color: #4CAF50;
+    color: rgb(12, 12, 12);
+  }
+.btn-info{
+    color: white;
+    background-color: dodgerblue;
+    transition-duration: 0.4s;
+}
+.btn-info:hover {
+    background-color: #4CAF50;
+    color: rgb(12, 12, 12);
+  }
+.btn-warning{
+    color: white;
+    background-color: orange;
+    transition-duration: 0.4s;
+}
+.btn-warning:hover {
+    background-color: #4CAF50;
+    color: rgb(12, 12, 12);
+  }
+.btn-danger{
+    color: white;
+    background-color: rgb(236, 68, 68);
+    transition-duration: 0.4s;
+}
+.btn-danger:hover {
+    background-color: #4CAF50;
+    color: rgb(12, 12, 12);
+    border: none;
+  }

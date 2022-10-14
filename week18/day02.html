@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+</head>
+<body style="background-color: skyblue;">
+    <fieldset style="border-width: 6px;margin-left: 250px;margin-right: 300px;background-color: pink;">
+        <center>
+            <h1><u>STUDENT REGISTRATION FORM</u></h1>
+            <form action="dfgj.php">
+                <table>
+                    <tr>
+                        <td>
+                            FIRST NAME:
+                        </td>
+                        <td>
+                            <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            LAST NAME:
+                        </td>
+                        <td>
+                            <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            DATE OF BIRTH:
+                        </td>
+                        <td>
+                            <input type="date" id="birth" name="birth" placeholder="Date of Birth" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EMAIL ID:
+                        </td>
+                        <td>
+                            <input type="email" id="mail" name="mail" placeholder="Email-ID" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            MOBILE NO:
+                        </td>
+                        <td>
+                            <input type="text" id="mobile" name="mobile" placeholder="+91-8292******" required maxlength="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GENDER:
+                        </td>
+                        <td>
+                            <input type="radio" id="femal" name="gender"  required>
+                            <label for="femal">Female</label>
+                            <input type="radio" id="male" name="gender" required>
+                            <label for="male">Male</label>
+            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ADDRESS:
+                        </td>
+                        <td>
+                            <textarea style="overflow: scroll;" name="add" id="add" cols="50" rows="5" placeholder="Enter your Address....." required></textarea>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>
+                                CITY:
+                            </td>
+                            <td>
+                                <input type="text" id="city" name="City Name" placeholder="Enter your city name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                PIN CODE:
+                            </td>
+                            <td>
+                                <input type="text" id="pin" name="pin" placeholder="Enter your pin code" minlength="6" maxlength="6" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                STATE:
+                            </td>
+                            <td>
+                                <input type="state" id="state" name="State Name" placeholder="Enter your State name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                COUNTRY:
+                            </td>
+                            <td>
+                                <input type="country" id="country" name="Country Name" placeholder="Enter your Country name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                HOBBIES:
+                            </td>
+                            <td>
+                                <input type="checkbox" id="Singing" name="Singing">
+                                <label for="Singing">Singing</label>
+                                <input type="checkbox" id="Dancing" name="Dancing">
+                                <label for="Dancing">Dancing</label>
+                                <input type="checkbox" id="Drawing" name="Drawing">
+                                <label for="Drawing">Drawing</label>
+                                <input type="checkbox" id="Sketcing" name="Sketcing">
+                                <label for="Sketcing">Sketcing</label><br>
+                                <input type="checkbox" id="Others" name="others">
+                                <label for="others">Others</label>
+                                <input type="text" id="Other_h" name="other_hobbies" placeholder="Enter any other hobby">
+        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                QUALIFICATION
+                            </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td><b>SL NO.</b></td>
+                                            <td><b>Examination</b></td>
+                                            <td align="center"><b>Board</b></td>
+                                            <td align="center"><b>Percentage</b></td>
+                                            <td align="center"><b>Year of Passing</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td><b>Class X</b></td>
+                                            <td><input type="text" name="class X_Board" maxlength="10" required></td>
+                                            <td><input type="text" name="class X_percentage" maxlength="10" required></td>
+                                            <td><input type="text" name="class X_passing_year" maxlength="10" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td><b>Class XII</b></td>
+                                            <td><input type="text" name="class XII_Board" maxlength="20"></td>
+                                            <td><input type="text" name="class XII_percentage" maxlength="20"></td>
+                                            <td><input type="text" name="class XII_passing_year" maxlength="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td><b>Graduation</b></td>
+                                            <td><input type="text" name="Graduation_Board" maxlength="20"></td>
+                                            <td><input type="text" name="Graduation_percentage" maxlength="20"></td>
+                                            <td><input type="text" name="Graduation_passing_year" maxlength="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.</td>
+                                            <td><b>Masters</b></td>
+                                            <td><input type="text" name="Masters_Board" maxlength="20"></td>
+                                            <td><input type="text" name="Masters_percentage" maxlength="20"></td>
+                                            <td><input type="text" name="Masters_passing_year" maxlength="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td align="center">(10 Char max)</td>
+                                            <td align="center">(up to decimal)</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>COURSES:</td>
+                            <td><input type="radio" id="bca" name="couses" required>
+                                <label for="bca">BCA</label>
+                                <input type="radio" id="bcom" name="couses" required>
+                                <label for="bcom">B.com</label>
+                                <input type="radio" id="bsc" name="couses" required>
+                                <label for="bsc">B.sc</label>
+                                <input type="radio" id="ba" name="couses" required>
+                                <label for="ba">B.A</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" id="submit" value="Submit">
+                                <input type="reset" id="reset" value="Reset">
+                            </td>
+                        </tr>
+                </table>
+            </form>
+        </center>
+    </fieldset>
+</body>
+</html>
