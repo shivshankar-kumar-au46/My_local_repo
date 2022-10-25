@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container bg-light ">
+                <div class="row justify-content-center my-5">
+                    <div class="col-12 bg-success  justify-content-center text-center text-white">
+                        <h1>Haming Distance</h1>
+                        <p><i>The Hamming distance between two strings of equal length is the number of position at which the corresponding symbols are diffrent. E.g: The hamming distance between strings "helloworld" and "worldhello" is 8.</i></p>
+                        </div>
+                    <div class="col-md-5 border text-dark  bg-white my-5">
+                      <form>
+                        <div class="row my-3">
+                            <div class="col-md-10">
+                                <div class="mb-3">
+                                    <label for="String" class="form-label"><b>String:</b></label>
+                                    <input type="text" class="form-control py-2" id="input" placeholder="equality,equlize" />
+                                  </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-3" id="btn">Submit</button>
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="mb-3 my-3">
+                              <label
+                                for="distance"
+                                class="form-label"
+                                ><b>Haming Distance</b></label>
+                              <input type="text" class="form-control" id="hamingDis" disabled/>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+  </body>
+  <script src="index.js" defer></script>
+</html>

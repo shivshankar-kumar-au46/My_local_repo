@@ -1,132 +1,520 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my HTML class</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+  background: linear-gradient(
+    rgb(255, 255, 0),
+    rgb(128, 0, 0),
+    rgb(139, 0, 120),
+    rgb(255, 69, 0),
+    rgb(218, 165, 32)
+  );
+}
 
-    <p>Lorem ipsum dolor <b>amet consectetur adipisicing elit.</b>  Neces<i>sitatibus in n</i> delectus, dicta suscipit officia laudantium possimus quidem exercitationem sed dolor facilis sunt, veritatis consectetur accusantium deleniti mollitia, omnis ullam.</p>
-    <a href="https://www.programiz.com/javascript/online-compiler/", target="_blank">click here</a>
-    <img src="https://www.freepik.com/free-photos-vectors/background", alt="not loading">
-   table tag
-     <table border="2px">
-        <thead>
+.PersonalInfo {
+  border-left: 6px solid gray;
+  border-bottom: 6px solid gray;
+  background-color: lightgray;
+  display: block;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+#para {
+  font-size: 40px;
+  text-decoration-line: underline;
+}
+.p_input {
+  border: none;
+  padding-left: 5px;
+  border-bottom: 2px solid #000000;
+  background-color: lightgray;
+  margin-left: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  width: 500px;
+  height: 40px;
+}
+label {
+  font-size: 24px;
+}
+
+.table_input {
+  font-size: 20px;
+  border: none;
+  width: 300px;
+  height: 50px;
+  background: repeating-linear-gradient(
+    rgb(0, 255, 255),
+    rgb(255, 228, 196),
+    rgb(210, 105, 30)
+  );
+}
+.table_input1 {
+  font-size: 20px;
+  border: none;
+  width: 347px;
+  height: 50px;
+  background: repeating-linear-gradient(
+    rgb(0, 255, 255),
+    rgb(255, 228, 196),
+    rgb(210, 105, 30)
+  );
+}
+
+table {
+  border-collapse: collapse;
+}
+#class1 {
+  font-size: 30px;
+}
+th,
+td {
+  border: 2px solid;
+  height: 50px;
+  padding-left: 5px;
+  border-bottom: 2px solid;
+  background: repeating-linear-gradient(
+    rgb(0, 255, 255),
+    rgb(255, 228, 196),
+    rgb(210, 105, 30)
+  );
+}
+th {
+  background-color: rgb(255, 255, 0);
+  color: red;
+}
+hr {
+  background-color: black;
+  border: 5px solid;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.table_button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  background-color: rgb(207, 207, 17);
+  margin-right: 10px;
+  border: 4px solid;
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+.table_button:hover {
+  background-color: rgb(255, 69, 0);
+  color: white;
+}
+textarea {
+  border: none;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 1000px;
+  height: 200px;
+  font-size: 40px;
+  background: repeating-linear-gradient(
+    rgb(240, 230, 140),
+    rgb(218, 165, 32),
+    rgb(184, 134, 11),
+    rgb(173, 255, 47)
+  );
+  padding: 10px;
+}
+.pdf_button {
+  border: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: green;
+  width: 200px;
+  height: 80px;
+  float: center;
+  font-size: 20px;
+  margin-left: 80%;
+}
+#resume {
+  border: 5px solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+.heading {
+  text-align: center;
+  font-size: 50px;
+  color: blue;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: rgb(51, 255, 255);
+}
+.pdf_button:hover {
+  background-color: rgb(51, 255, 255);
+  width: 250;
+  height: 100;
+}
+    </style>
+    <title>Resume</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="resume">
+      <h1 class="heading">-: Resume Generator :-</h1>
+      <div class="personalInfo" id="personal">
+        <h2>Personal Information</h2>
+        <label><b>First Name :-</b></label
+        ><br />
+        <input
+          type="text"
+          class="p_input"
+          id="f_name"
+          placeholder="First Name"
+          required
+        /><br />
+        <label><b>Last Name :-</b></label
+        ><br />
+        <input
+          type="text"
+          class="p_input"
+          id="l_name"
+          placeholder="Last Name"
+          required
+        /><br />
+        <label><b>Father Name :-</b></label
+        ><br />
+        <input
+          type="text"
+          class="p_input"
+          id="ft_name"
+          placeholder="Father Name"
+          required
+        /><br />
+        <label><b>Email :-</b></label
+        ><br />
+        <input
+          type="text"
+          class="p_input"
+          id="email"
+          placeholder="Email-ID"
+          required
+        /><br />
+        <label><b>Address :-</b></label
+        ><br />
+        <input
+          type="text"
+          class="p_input"
+          id="address"
+          placeholder="Address"
+          required
+        /><br />
+        <label><b>Phone_No :-</b></label
+        ><br />
+        <input
+          type="text"
+          class="p_input"
+          id="phone"
+          placeholder="phone number"
+          required
+        /><br /><br />
+        <hr />
+        <hr />
+        <h2 class="heading">-: Objective :-</h2>
+        <textarea
+          rows="4"
+          cols="50"
+          id="object"
+          placeholder="Write About Your"
+        ></textarea>
+        <br /><br />
+        <hr />
+        <hr />
+
+        <div class="qualification">
+          <h2 class="heading">-: Qualification :-</h2>
+          <table id="myTable">
+            <col width="160" />
             <tr>
-                <th> name</th>
-                <th> class</th>
-                <th> subject</th>
-                <th> marks</th>
-                <th> roll</th>
+              <th>Class</th>
+              <th>Year of Passing</th>
+              <th>Board/University</th>
+              <th>Percentage%</th>
             </tr>
-        </thead>
-        <tbody>
+            <col width="170" />
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-
-
-
+              <td id="class1">10<sup>th</sup></td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="year1"
+                  placeholder="Enter Passed Class"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input1"
+                  id="bu1"
+                  placeholder="Enter B/U Name"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="per1"
+                  placeholder="Enter Percentage"
+                />
+              </td>
             </tr>
-            
-        </tbody>
+            <tr>
+              <td id="class1">12<sup>th</sup></td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="year1"
+                  placeholder="Enter Passed Class"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input1"
+                  id="bu1"
+                  placeholder="Enter Board/University/Institute Name"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="per1"
+                  placeholder="Enter Percentage"
+                />
+              </td>
+            </tr>
+            <col width="350" />
 
+            <tr>
+              <td id="class1">Graduation</td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="year1"
+                  placeholder="Enter Passed Class/Course"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input1"
+                  id="bu1"
+                  placeholder="Enter Board/University/Institute Name"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="per1"
+                  placeholder="Enter Percentage"
+                />
+              </td>
+            </tr>
+            <col width="170" />
 
-
-
-    </table>
-</body>
-</html> --> -->
-
-<form action="/action_page.php">
-    <fieldset>
-    <legend>Personalia:</legend> 
-    <label for="fname">First
-    name:</label>
-    <input type="text" id="fname"
-    name="fname"><br><br>
-    <label for="lname">Last
-    name:</label>
-    <input type="text" id="lname"
-    name="lname"><br><br>
-    <label
-    for="email">Email:</label>
-    <input type="email"
-    id="email" name="email"><br><br>
-    <label
-    for="birthday">Birthday:</label>
-    <input type="date"
-    id="birthday"
-    name="birthday"><br><br>
-    <input type="submit"
-    value="Submit">
-    </fieldset>
-    </form>
-
-
-    <label for="w3review">Review of
-        W3Schools:</label>
-        <textarea id="w3review"
-        name="w3review" rows="4" cols="50">
-        At w3schools.com you will learn how
-        to make a website. They offer free
-        tutorials in all web development
-        technologies.
-        </textarea>
-
-        
-
-
-        <button type="button">Click
-            Me!</button>
-            <div>
+            <tr>
+              <td id="class1">Post-Graduation</td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="year1"
+                  placeholder="Enter Passed Class/Course"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input1"
+                  id="bu1"
+                  placeholder="Enter Board/University/Institute Name"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="table_input"
+                  id="per1"
+                  placeholder="Enter Percentage"
+                />
+              </td>
+            </tr>
+          </table>
+          <p id="para">
+            **Note :- Enter your all information in the table. If your
+            qualification is less to give formet then click on the delete row to
+            delete bottom row.
+          </p>
+          <p allign="right">
             <button
-            type="submit">Submit</button>
+              class="table_button"
+              id="createrow"
+              onclick="myCreateFunction()"
+            >
+              Create Row
+            </button>
             <button
-            type="reset">Reset</button>
-            <!-- <input type="reset" />
-            -->
-            <!-- <input type="submit" />
-            --></div>
+              class="table_button"
+              id="deleterow"
+              onclick="myDeleteFunction()"
+            >
+              Delete Row
+            </button>
+          </p>
+        </div>
+        <hr />
+        <hr />
+        <h2 class="heading">-: Experience :-</h2>
+        <textarea
+          rows="4"
+          cols="50"
+          id="expert"
+          placeholder="Write About Your Experience"
+        ></textarea>
+        <hr />
+        <hr />
+        <h2 class="heading">-: Technical-Skill :-</h2>
+        <textarea
+          rows="4"
+          cols="50"
+          id="skill"
+          placeholder="Write About Your Skill"
+        ></textarea>
+        <!-- <br /><br /> -->
+        <button class="pdf_button" onclick="genPDF()">Create Resume PDF</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+  <script>
+    let rowcount = 4;
+function myCreateFunction() {
+  let Class = prompt("Enter Your Class");
+  let year = prompt("Enter Year");
+  let board = prompt("Enter Board/University/Institute");
+  let percent = prompt("Enter Your Percentage");
+  if (Class != null) {
+    let table = document.getElementById("myTable");
+    let row = table.insertRow(++rowcount);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    cell1.innerHTML = Class.fontsize(4);
+    cell2.innerHTML = year.fontsize(4);
+    cell3.innerHTML = board.fontsize(4);
+    cell4.innerHTML = percent.fontsize(4);
+  } else {
+    alert("Please Enter Your Class");
+  }
+}
+function myDeleteFunction() {
+  document.getElementById("myTable").deleteRow(rowcount);
+  --rowcount;
+}
+function genPDF() {
+  let doc = new jsPDF();
+  doc.setFontType("bold");
+  doc.text(
+    20,
+    20,
+    document.getElementById("f_name").value +
+      "" +
+      document.getElementById("l_name").value
+  );
+  doc.setFontType("normal");
+  doc.setFontSize(24);
+  doc.text(20, 30, "Father Name :" + document.getElementById("ft_name").value);
+  doc.text(20, 36, "Email :" + document.getElementById("email").value);
+  doc.text(20, 42, "Address :" + document.getElementById("address").value);
+  doc.text(20, 48, "Phone_No :" + document.getElementById("phone").value);
+  doc.setFontType("bold");
+  doc.setFontSize(20);
+  doc.text(20, 36, "Objective");
+  doc.setFontType("normal");
+  doc.setFontSize(16);
+  doc.text(20, 68, document.getElementById("object").value);
+  doc.setFontType("bold");
+  doc.setFontSize(20);
+  doc.text(20, 36, "Qualification");
+  doc.setFontSize(16);
+  doc.setFontType("normal");
+  doc.text(20, 110, "Class");
+  doc.text(50, 110, "Year of Passing");
+  doc.text(100, 110, "Board/University/Institute");
+  doc.text(170, 110, "Percentage");
+  doc.setFontSize(16);
+  doc.text(20, 120, "10th");
+  doc.text(50, 120, document.getElementById("year1").value);
+  doc.text(100, 120, document.getElementById("bu1").value);
+  doc.text(170, 120, document.getElementById("per1").value);
+  doc.text(
+    20,
+    121,
+    "__________________________________"
+  );
 
+  doc.text(20, 127, "12th");
+  doc.text(50, 127, document.getElementById("year2").value);
+  doc.text(100, 127, document.getElementById("bu2").value);
+  doc.text(170, 127, document.getElementById("per2").value);
+  doc.text(
+    20,
+    128,
+    "__________________________________"
+  );
 
-            <!-- <form action="/action_page.php">
-                <input type="radio" id="html"
-                name="fav_language" value="HTML">
-                <label
-                for="html">HTML</label><br>
-                <input type="radio" id="css"
-                name="fav_language" value="CSS">
-                <label
-                for="css">CSS</label><br>
-                <input type="radio"
-                id="javascript" name="fav_language"
-                value="JavaScript">
-                <label
-                for="javascript">JavaScript</label>
-                <br><br>
-                <input type="submit"
-                value="Subm -->
+  doc.text(20, 134, "BCA");
+  doc.text(50, 134, document.getElementById("year3").value);
+  doc.text(100, 134, document.getElementById("bu3").value);
+  doc.text(170, 134, document.getElementById("per3").value);
+  doc.text(
+    20,
+    135,
+    "__________________________________"
+  );
 
-<!-- 
-
-                <form action="/action_page.php">
-                    <label for="fname">First
-                    name:</label>
-                    <input type="text" id="fname"
-                    name="fname"><br><br>
-                    <label for="lname">Last
-                    name:</label>
-                    <input type="text" id="lname"
-                    name="lname"><br><br>
-                    <input type="submit"
-                    value="Submit">
-                    </form>
-                     -->
-
-                     
+  doc.text(20, 141, "MCA");
+  doc.text(50, 141, document.getElementById("year4").value);
+  doc.text(100, 141, document.getElementById("bu4").value);
+  doc.text(170, 141, document.getElementById("per4").value);
+  doc.text(
+    20,
+    142,
+    "__________________________________"
+  );
+  doc.setFontType("bold");
+  doc.setFontSize(16);
+  doc.text(20, 160, "Experience");
+  doc.setFontType("normal");
+  doc.setFontSize(16);
+  doc.text(20, 168, document.getElementById("expert").value);
+  doc.setFontType("bold");
+  doc.setFontSize(16);
+  doc.text(20, 200, "Technical-Skill");
+  doc.setFontType("normal");
+  doc.setFontSize(16);
+  doc.setFontSize(16);
+  doc.text(20, 208, document.getElementById("skill").value);
+  doc.save(Test.pdf);
+}
+  </script>
+</html>

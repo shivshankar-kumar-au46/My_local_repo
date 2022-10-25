@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    width: 100vh;
+    height: auto;
+}
+input{
+    padding: 10px;
+    width: 40rem;
+}
+
+.myTable{
+    border-collapse: collapse;
+    border: 1px solid gray;
+    /* width: 50vw; */
+    width: 40rem;
+    font-size: 20px;
+}
+
+.myTable th, .myTable td{
+    text-align: left;
+    padding: 10px;
+}
+
+.myTable td{
+    border-bottom: 1px solid gray;
+}
+
+.header{
+    background-color: gray;
+}
+
+.myTable tr:hover{
+    background-color: gainsboro;
+}

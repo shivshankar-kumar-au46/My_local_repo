@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom practice</title>
+  </head>
+  <style>
+    .container {
+      background-color: yellow;
+      height: 400px;
+      width: 600px;
+      margin: 10px;
+    }
+    .para {
+      color: red;
+    }
+  </style>
+  <body>
+    <div id="div" class="container"></div>
+    <button id="btn">click me!</button>
+
+    <script>
+      let container = document.getElementById("div");
+      let heading = document.createElement("h1");
+    //   let button = document.getElementById('btn')
+
+      let count = 0;
+      let button = document.getElementById("btn");
+      button.style.cssText = "margin:10px 0px 0px 10px; padding:10px;color:white;font-size:15px; background-color:green"
+      button.addEventListener("click", () => {
+            for (let i = 0; i<=59; i++){
+                let newDiv = document.createElement('div');
+                newDiv.style.cssText += "width:50px;height:50px;background-color:green;margin:5px;display:inline-block";
+                container.appendChild(newDiv)
+
+            }
+            
+        //   count++;
+        //   heading.innerHTML = count;
+        //   container.appendChild(heading);
+        //   console.log(count);
+          // container.appendChild(heading);
+        });
+    </script>
+  </body>
+</html>

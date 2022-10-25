@@ -47,6 +47,10 @@
         <li>list 3</li>
         <li>list 4</li>
     </ul>
+
+    <div class="pi">
+
+    </div>
  
 <!-- <div id="first"> -->
     <!-- <p>This is a p tag</p> -->
@@ -65,15 +69,15 @@
 
 // How to add new list before list 4;
 
-const elm = document.getElementById("first");
+// const elm = document.getElementById("first");
 
-const newList = document.createElement("li");
+// const newList = document.createElement("li");
 
-newList.textContent = "I am new list";
+// newList.textContent = "I am new list";
 
-let pos = elm.lastElementChild;
+// let pos = elm.lastElementChild;
 
-elm.insertBefore(newList,pos);
+// elm.insertBefore(newList,pos);
 
 
  
@@ -90,10 +94,10 @@ elm.insertBefore(newList,pos);
 // const elm = document.getElementById("first");
 // elm.innerHTML = "<u>hello</u>"
 
-// const elm = document.getElementsByClassName("cl pi");
-// for (let i = 0 ; i<elm.length; i++){
-//     elm[i].innerHTML = "<h1>hello shiv babu</h1>"
-// }
+const elm = document.getElementsByClassName("pi");
+for (let i = 0 ; i<elm.length; i++){
+    elm[i].innerHTML = "<h1>hello shiv babu</h1>"
+}
 
 // const elm = document.getElementsByTagName("h3");
 // for (let i = 0 ; i<elm.length; i++){
