@@ -1,0 +1,19 @@
+{
+  "name": "expressbyshiv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node aap.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expree": "^2.0.3",
+    "express": "^4.18.2",
+    "prompt-sync": "^4.2.0",
+    "request": "^2.88.2"
+  }
+}

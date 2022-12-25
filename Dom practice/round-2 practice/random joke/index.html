@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            overflow: hidden;
+        }
+        .container{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-color: black;
+            width: 600px;
+            height: 400px;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            box-shadow: 2px, 2px 10px black;
+        }
+        button{
+            /* align-items: center; */
+            position: relative;
+            left: 50%;
+            top: 9%;
+            transform: translate(-50%, 200%);
+
+            padding: 13px;
+            background-color: blue;
+            color: white;
+            width: 300px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .joke-div{
+            background-color: white;
+            width: 90%;
+            height: 200px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        .newClass{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="mainDiv" class="joke-div">
+
+        </div>
+        <button id="btn">Click</button>
+    </div>
+
+<script>
+    let mainDiv = document.getElementById('mainDiv');
+    let button = document.getElementById('btn')
+    let api =   "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+    mainDiv.classList.remove('joke-div')
+    button.addEventListener('click',()=>{
+    mainDiv.classList.add('joke-div')
+        mainDiv.classList.add('newClass');
+        fetch(api).then((data)=>data.json()).then((data)=>{
+            mainDiv.innerText = `${data.joke}`;
+        })
+    })
+</script>
+
+</body>
+</html>

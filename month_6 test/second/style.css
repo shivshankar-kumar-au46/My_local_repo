@@ -1,0 +1,46 @@
+.main-div{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card{
+    position: relative;
+    background-color: orange;
+    border: 25px solid green;
+    width: 50%;
+    height: 50%;
+    box-shadow: 2px 4px 8px black;
+}
+
+button{
+    position: absolute;
+    left: 206px;
+    top: 11px;
+    box-shadow: 3px 3px 4px -1px green;
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: lightgreen;
+}
+h2{
+    font-size: 20px;
+    position: absolute;
+    top: 51px;
+    left: 20px;
+}
+#authorNew{
+    position: absolute;
+    top: 200px;
+    left: 418px;
+}
+

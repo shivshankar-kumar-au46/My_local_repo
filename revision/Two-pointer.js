@@ -1,5 +1,6 @@
 // Two pointer approach 
 let a = [1,2,3,4,4,6,9];
+[1,9]
 let target = 6;
 
 function sumNum(a,target){

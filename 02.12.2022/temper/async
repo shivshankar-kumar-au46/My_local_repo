@@ -1,0 +1,47 @@
+const arr = [4,5,2,2,3,4,1];
+
+const dist = [];
+// Eleminate the duplicates from the array find the distinct
+
+// Sort the array
+
+const eleminateDuplicatesFromArray = (arr) => {
+    return new Promise((resolve, reject) => {
+        for(let i = 0; i < arr.length; i++) {
+            if(dist.indexOf(arr[i]) === -1) {
+                 dist.push(arr[i]);
+            }
+        }
+        resolve(dist);
+    });
+}
+
+const sortArrAscending = (arr) => {
+    return new Promise((resolve, reject) => {
+        const result = arr.sort(sortArray);
+        resolve(result);
+    })
+    
+}
+
+function sortArray(a, b) {
+    return a - b;
+}
+
+eleminateDuplicatesFromArray(arr).then((result1) => {
+    console.log("Distinct elements are:", result1);
+    return sortArrAscending(result1);
+}).then((result2) => {
+    console.log("Sorted arrays are:", result2);
+})
+
+async function mainFunction() {
+    try {
+        const distinctElements = await eleminateDuplicatesFromArray(arr);
+        const sortArrAscending = await sortArrAscending(distinctElements);
+        console.log(sortArrAscending);
+    } catch(err) {
+        console.log(err);
+    }
+   
+}

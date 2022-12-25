@@ -1,0 +1,17 @@
+// https://jsonplaceholder.typicode.com/users
+
+const fetch = require('node-fetch');
+
+const url = "https://jsonplaceholder.typicode.com/users";
+
+// Fetching the record from json placeholder
+async function mainFunction() {
+    try {
+        const result = await fetch(url).then((res => res.json()));
+        console.log(result);
+    } catch(err) {
+        console.log("Error:", err);
+    }
+}
+
+mainFunction()

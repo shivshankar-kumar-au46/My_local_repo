@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: palevioletred;
+}
+
+.new {
+   margin: 1rem 20rem;
+  }
+  #hello {
+    height: 400px;
+    width: 500px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(4, 34, 41);
+    background-color: rgb(215, 230, 234);
+    margin: 0px 70px;
+  }
+  #me {
+    font-size: 40px;
+  }
+  #stringInput {
+    width: 400px;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px;
+    font-size: 40px;
+  }
+  #mike {
+    color: white;
+    height: fit-content;
+    width: 500px;
+    font-size: 20px;
+    background-color: rgba(12, 68, 26, 0.769);
+    margin-bottom: 0px;
+    margin-left: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(4, 34, 41);
+  }
+  #submitBtn {
+    margin: 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(90, 9, 9);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  #submitBtn:hover{
+    background-color: blueviolet;
+  }
+  #nike {
+    margin: 10px;
+    font-size: 40px;
+  }
+  #hammingDistance {
+    height: 50px;
+    width: 400px;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 40px;
+  }
+  #moke {
+    text-align: center;
+  }

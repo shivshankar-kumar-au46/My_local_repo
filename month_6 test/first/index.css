@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner_div {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.tag {
+  color: grey;
+}
+#btn{
+  margin-top: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+input{
+    padding: 10px;
+    /* border-radius: 5px; */
+    outline: none;
+
+}

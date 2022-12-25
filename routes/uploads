@@ -1,0 +1,118 @@
+// Promise 
+
+// Defination - The Promise object represents the eventual completion (or failure) of an asynchronous operation 
+// and its resulting value.
+
+// A JavaScript Promise object can be:
+
+// Pending
+// Fulfilled
+// Rejected
+// The Promise object supports two properties: state and result.
+
+// While a Promise object is "pending" (working), the result is undefined.
+
+// When a Promise object is "fulfilled", the result is a value.
+
+// When a Promise object is "rejected", the result is an error object.
+
+// Example - 
+
+// Usecase - I am having the dinner in 5 star hotel
+
+// Inventory --> 
+
+// 1st job/task - I told waiter to get me some water
+// 2nd job/task - I told waiter to get me some chicken
+// 3rd job/task - I told waiter to get me some roti's
+
+// 10
+
+// 1,2,3,4,5,6,7,8,9,10
+
+// 4 task failed. 
+
+// (Promise) 1. User login in flipkart - First task
+// (Promise) 2. User needs to add the default address - Second task
+// (Promise) 3. User select the order ( Camera ) - Third task  
+// (Promise) 4. User make the payment - Fourth task -- INR 60,000 -- Payment failed
+// (Promise) 5. User place the order - Fifth task
+
+// Using ES6
+
+const isWaterAvailable = true;
+const isChickenAvailable = true;
+const isRotiAvailable = true;
+
+// For water avaliable in the inventory
+const isWaiter_DeliveredWater_toCustomer = () => {
+   return new Promise((resolve, reject) => {
+      if(isWaterAvailable) { // In the Inventory
+         resolve("Success !!! Waiter successfully delivered water to the customer.")
+      } 
+      reject("Out of stock !!! Waiter informed to the customer, we are don't have water right now.")
+   })
+}
+
+// For chicken avaliable in the inventory
+const isWaiter_DeliveredChicken_toCustomer = () => {
+    return new Promise((resolve, reject) => {
+       if(isChickenAvailable) { // In the Inventory
+          resolve("Success !!! Waiter successfully delivered chicken to the customer.")
+       } 
+       reject("Out of stock !!! Waiter informed to the customer, we are don't have chicken right now.")
+    })
+}
+
+// For roti avaliable in the inventory
+const isWaiter_DeliveredRoti_toCustomer = () => {
+    return new Promise((resolve, reject) => {
+        if(isRotiAvailable) { // In the Inventory
+            resolve("Success !!! Waiter successfully delivered roti to the customer.")
+        } 
+        reject("Out of stock !!! Waiter informed to the customer, we are don't have roti right now.")
+    })
+}
+
+
+const mainFunction = () => {
+    // Water
+    // isWaiter_DeliveredWater_toCustomer().then((result) => {
+    //     console.log(result);
+    // }).catch((err) => {
+    //     console.log(err);
+    // });
+
+    // // Chicken
+    // isWaiter_DeliveredChicken_toCustomer().then((result) => {
+    //     console.log(result);
+    // }).catch((err) => {
+    //     console.log(err);
+    // })
+
+    // // Roti
+    // isWaiter_DeliveredRoti_toCustomer().then((result) => {
+    //     console.log(result);
+    // }).catch((err) => {
+    //     console.log(err);
+    // })
+
+    // isWaiter_DeliveredWater_toCustomer().then((result1) => {
+    //     console.log(result1);
+    //     return isWaiter_DeliveredChicken_toCustomer();
+    // }).then((result2) => {
+    //     console.log(result2);
+    //     return isWaiter_DeliveredRoti_toCustomer();
+    // }).then((result3) => {
+    //     console.log(result3);
+    //     console.log("Success, All task has completed !!!!")
+    // }).catch((err) => {
+    //     console.log(err);
+    // });
+
+    Promise.all([isWaiter_DeliveredWater_toCustomer(), isWaiter_DeliveredChicken_toCustomer(), isWaiter_DeliveredRoti_toCustomer()]).then((res)  => {
+        console.log(res);
+    })
+}
+
+mainFunction();

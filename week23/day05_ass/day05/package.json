@@ -1,0 +1,21 @@
+{
+  "name": "shiv",
+  "version": "1.0.0",
+  "description": "day05 assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "day05"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "shv",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

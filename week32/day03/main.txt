@@ -1,0 +1,41 @@
+//Select & Create a particular DBs 
+
+use "database name" , press enter
+ex- use bookMyShow
+
+// Create Collection
+
+db.createCollection('movies')
+
+// Create documents-POST
+
+    //1.create one documents
+        db.movies.insertOne({movieName: "KGF", cast: "yash"})
+
+    //2.create many documents
+        db.movies.insertMany([{movieName: "Avtar-2", cast: "xyz"},{movieName: "Drishyam", cast: "abc"},{movieName: "Andhadhun", cast: "efg"}]) 
+
+// Read documents-GET
+
+    db.movies.find() //or
+    db.movies.find().pretty()
+
+// Update documents-PUT
+
+    //1.Update One
+        db.movies.updateOne({movieName:"Avtar"}, {$set:{cast:raju}})
+
+    //2.Update Many
+        db.movies.updateMany({movieName:"Avtar"},{$set: {cast:raju, member:10}})    
+
+//Delete documents-DELETE
+
+    //1.Delete one
+        db.movies.deleteOne({movieName:"Avtar"})
+
+    //2.Delete Many
+        db.movies.deleteMany({cast:"abc"})
+
+
+
+

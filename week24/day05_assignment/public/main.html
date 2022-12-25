@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Back-End Form</h1>
+<form action="localhost:8000/api/users">
+    <div>
+        <lable for="fname">FirstName :-</lable>
+        <input type="text" name="first" id="fname" />
+      </div>
+      <div>
+        <lable for="lname">LastName :-</lable>
+        <input type="text" name="lname" id="lname" />
+      </div>
+      <div>
+        <lable for="email">Email :-</lable>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div>
+        <lable for="work">Occupation :-</lable>
+        <select id="work" name="work">
+          <option>Farmer</option>
+          <option>Business Men</option>
+          <option>Shopkeeper</option>
+          <option>Doctor</option>
+          <option>Police Service</option>
+          <option>Software Engineer</option>
+        </select>
+      </div>
+      <div>
+        <lable>Gender :-</lable>
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+      </div>
+      <div>
+        <lable for="hobby">Hobbies :-</lable>
+        <input type="checkbox" name="hobby" />Hockey
+        <input type="checkbox" name="hobby" />Reading
+        <input type="checkbox" name="hobby" />Cycling
+        <input type="checkbox" name="hobby" />Swimming
+        <input type="checkbox" name="hobby" />Danceing
+        <input type="checkbox" name="hobby" />Cricket
+        <input type="checkbox" name="hobby" />Other
+      </div>
+      <button>Submit</button>
+</form>
+
+  </body>
+</html>

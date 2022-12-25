@@ -1,0 +1,91 @@
+
+  body {
+    background: skyblue;
+    color: black;
+  }
+  .container{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 260px;
+    box-shadow: 0px 5px 9px black;
+    border-radius: 5px;
+  }
+  .text{
+    margin-left: 35px;
+  }
+  .btn {
+    margin-left: 34px;
+    border-color: orange;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .btn:hover {
+    background: orange;
+    color: black;
+  }
+  
+  .question-card {
+    display: none;
+    position: relative;
+    background: transparent;
+    border-color: orange;
+  }
+  .feedback {
+    display: none;
+  }
+  
+  textarea {
+    border-radius: 0.25rem;
+    border-color: orange;
+  }
+ 
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 2rem;
+    color: orange;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: green;
+  }
+  .submitBtn {
+    border: 0.2rem solid white;
+    color: white;
+    background: transparent;
+    margin-left: 60px;
+  }
+  .submitBtn:hover {
+    background: green;
+    color: orange;
+  }
+  .edit-flashcard {
+    border: 0.2rem solid green;
+    color: green;
+    background: transparent;
+  }
+  .edit-flashcard:hover {
+    background: green;
+    color: black;
+  }
+  .delete-flashcard {
+    border: 0.2rem solid orange;
+    color: orange;
+    background: transparent;
+  }
+  .delete-flashcard:hover {
+    background: orange;
+    color: black;
+  }
+  .answer {
+    display: none;
+  }
+  .showItem {
+    display: block;
+  }
